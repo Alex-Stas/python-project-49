@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import prompt
 import random
 import brain_games.game_engine
 
@@ -8,14 +7,17 @@ import brain_games.game_engine
 def main():
     # brain_games.cli.welcome_user()
     QUANTITY_OF_ROUNDS = 3
-    EVEN_GAME_MESSAGE = 'Answer "yes" if the number is even, otherwise answer "no"'
+    CALC_GAME_MESSAGE = 'What is the result of the expression?'
     RND_BETWEEN_NUM1, RND_BETWEEN_NUM2 = 1, 100
     user_name = brain_games.game_engine.welcome_user()
-    print(EVEN_GAME_MESSAGE)
+    print(CALC_GAME_MESSAGE)
     for _ in range(QUANTITY_OF_ROUNDS):
-        number = generate_random_number(RND_BETWEEN_NUM1, RND_BETWEEN_NUM2)
-        right_answer = check_even_return_correct_answer(number)
-        result_of_round = brain_games.game_engine.ask_for_answer_check_correct_react_and_return_result(user_name, number, right_answer)
+        num1 = generate_random_number(RND_BETWEEN_NUM1, RND_BETWEEN_NUM2)
+        num2 = generate_random_number(RND_BETWEEN_NUM1, RND_BETWEEN_NUM2)
+        operation = random.choice(['+', '-', '*'])
+        full_expression = f'{num1} {operation} {num2}'
+        right_answer = perform_operation_return_correct_answer(full_expression)
+        result_of_round = brain_games.game_engine.ask_for_answer_check_correct_react_and_return_result(user_name, full_expression, right_answer)
         if not result_of_round:
             return
         else:
@@ -39,8 +41,8 @@ def generate_random_number(start, end):
     return random_number
 
 
-def check_even_return_correct_answer(number):
-    return 'yes' if number % 2 == 0 else 'no'
+def perform_operation_return_correct_answer(full_expression):
+    return str(eval(full_expression))
 
 
 if __name__ == '__main__':

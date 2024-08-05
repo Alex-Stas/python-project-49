@@ -18,3 +18,8 @@ def ask_for_answer_check_correct_react_and_return_result (user_name, question, c
         else:
             print('Correct!')
             return True
+
+
+# def play_rounds_ask_for_answer_get_correct_one_and_react (user_name, game_message):
+#     QUANTITY_OF_ROUNDS = 3
+    

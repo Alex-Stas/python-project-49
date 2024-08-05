@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import prompt
 import random
 import brain_games.game_engine
 

@@ -4,3 +4,7 @@
 Video of even-game installing and playing
 
 https://asciinema.org/a/LgrlpqQko0HFkbmYkzC9S6orU
+
+Video of calc-game playing
+
+https://asciinema.org/a/PeXLipXdrfANp8PMQC73HJUNg
