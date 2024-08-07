@@ -8,3 +8,7 @@ https://asciinema.org/a/LgrlpqQko0HFkbmYkzC9S6orU
 Video of calc-game playing
 
 https://asciinema.org/a/PeXLipXdrfANp8PMQC73HJUNg
+
+Video of gcd-game playing
+
+https://asciinema.org/a/NjmysbeDbSTXDN9OmS79ChqPL
