@@ -12,3 +12,7 @@ https://asciinema.org/a/PeXLipXdrfANp8PMQC73HJUNg
 Video of gcd-game playing
 
 https://asciinema.org/a/NjmysbeDbSTXDN9OmS79ChqPL
+
+Video of progression game playing
+
+https://asciinema.org/a/XIWTYMNPBkAMEqApfyiubHlSz
