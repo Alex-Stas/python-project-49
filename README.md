@@ -16,3 +16,7 @@ https://asciinema.org/a/NjmysbeDbSTXDN9OmS79ChqPL
 Video of progression game playing
 
 https://asciinema.org/a/XIWTYMNPBkAMEqApfyiubHlSz
+
+Video of prime game playing
+
+https://asciinema.org/a/zGqiadTUpalS6B2LVI6HOcJKN
