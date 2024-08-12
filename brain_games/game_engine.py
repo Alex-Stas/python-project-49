@@ -8,18 +8,15 @@ def welcome_user():
     return user_name
 
 
-def ask_for_answer_check_correct_react_and_return_result (user_name, question, correct_answer):
-        print(f'Question: {question}')
-        user_answer = prompt.string(prompt='Your answer: ', empty=True)
-        if user_answer != correct_answer:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-            print(f"Let's try again, {user_name}!")
-            return False
-        else:
-            print('Correct!')
-            return True
-
-
-# def play_rounds_ask_for_answer_get_correct_one_and_react (user_name, game_message):
-#     QUANTITY_OF_ROUNDS = 3
-    
+def ask_for_answer_check_correct_react_and_return_result(
+        user_name, question, correct_answer):
+    print(f'Question: {question}')
+    user_answer = prompt.string(prompt='Your answer: ', empty=True)
+    if user_answer != correct_answer:
+        print(f'{user_answer} is wrong answer ;(. '
+              f'Correct answer was {correct_answer}.')
+        print(f"Let's try again, {user_name}!")
+        return False
+    else:
+        print('Correct!')
+        return True
