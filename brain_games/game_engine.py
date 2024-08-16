@@ -1,4 +1,21 @@
 import prompt
+from brain_games.const import QUANTITY_OF_ROUNDS
+
+def run_game(get_question_and_correct_answer, game_message):
+    user_name = welcome_user()
+    print(game_message)
+    
+    for _ in range(QUANTITY_OF_ROUNDS):
+        question, correct_answer = get_question_and_correct_answer()       
+        print(f'Question: {question}')
+        user_answer = prompt.string(prompt='Your answer: ', empty=True)
+        if user_answer == correct_answer:
+            print('Correct!')
+        else:      
+            print(f'{user_answer} is wrong answer ;(. '
+            f'Correct answer was {correct_answer}.')
+            print(f"Let's try again, {user_name}!")
+            return
 
 
 def welcome_user():
@@ -6,17 +23,3 @@ def welcome_user():
     user_name = prompt.string(prompt='May I have your name? ', empty=False)
     print(f'Hello, {user_name}!')
     return user_name
-
-
-def ask_for_answer_check_correct_react_and_return_result(
-        user_name, question, correct_answer):
-    print(f'Question: {question}')
-    user_answer = prompt.string(prompt='Your answer: ', empty=True)
-    if user_answer != correct_answer:
-        print(f'{user_answer} is wrong answer ;(. '
-              f'Correct answer was {correct_answer}.')
-        print(f"Let's try again, {user_name}!")
-        return False
-    else:
-        print('Correct!')
-        return True
