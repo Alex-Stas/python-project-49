@@ -16,6 +16,7 @@ def run_game(get_question_and_correct_answer, game_message):
             f'Correct answer was {correct_answer}.')
             print(f"Let's try again, {user_name}!")
             return
+    print(f'Congratulations, {user_name}!')
 
 
 def welcome_user():
