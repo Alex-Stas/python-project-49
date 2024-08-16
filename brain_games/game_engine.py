@@ -2,7 +2,9 @@ import prompt
 from brain_games.const import QUANTITY_OF_ROUNDS
 
 def run_game(get_question_and_correct_answer, game_message):
-    user_name = welcome_user()
+    print('Welcome to the Brain Games!')
+    user_name = prompt.string(prompt='May I have your name? ', empty=False)
+    print(f'Hello, {user_name}!')
     print(game_message)
     
     for _ in range(QUANTITY_OF_ROUNDS):
@@ -17,10 +19,3 @@ def run_game(get_question_and_correct_answer, game_message):
             print(f"Let's try again, {user_name}!")
             return
     print(f'Congratulations, {user_name}!')
-
-
-def welcome_user():
-    print('Welcome to the Brain Games!')
-    user_name = prompt.string(prompt='May I have your name? ', empty=False)
-    print(f'Hello, {user_name}!')
-    return user_name
