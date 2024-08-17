@@ -5,7 +5,7 @@ RND_MIN_SIZE_PROGRESSION, RND_MAX_SIZE_PROGRESSION = 5, 10
 RND_MIN_STEP_PROGRESSION, RND_MAX_STEP_PROGRESSION = 1, 10
 
 CALC_GAME_MESSAGE = 'What is the result of the expression?'
-EVEN_GAME_MESSAGE = 'Answer "yes" if the number is even, otherwise answer "no"'
+EVEN_GAME_MESSAGE = 'Answer "yes" if the number is even, otherwise answer "no".'
 GCD_GAME_MESSAGE = 'Find the greatest common divisor of given numbers.'
 PRIME_GAME_MESSAGE = 'Answer "yes" if given number is prime. '\
                      'Otherwise answer "no".'
