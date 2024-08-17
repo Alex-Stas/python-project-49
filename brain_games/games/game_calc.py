@@ -12,5 +12,6 @@ def perform_operation_return_correct_answer():
     right_answer = str(eval(full_expression))
     return full_expression, right_answer
 
+
 def run_calc_game():
     run_game(perform_operation_return_correct_answer, CALC_GAME_MESSAGE)

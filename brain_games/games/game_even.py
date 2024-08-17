@@ -7,7 +7,7 @@ from brain_games.const import EVEN_GAME_MESSAGE, \
 def is_even_return_correct_answer():
     number = random.randint(RND_BETWEEN_NUM1, RND_BETWEEN_NUM2)
     if number % 2 == 0:
-        return number, 'yes' 
+        return number, 'yes'
     return number, 'no'
 
 

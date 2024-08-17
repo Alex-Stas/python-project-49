@@ -4,7 +4,6 @@ from brain_games.const import PRIME_GAME_MESSAGE, \
     RND_BETWEEN_NUM1, RND_BETWEEN_NUM2
 
 
-
 def is_prime_return_correct_answer():
     number = random.randint(RND_BETWEEN_NUM1, RND_BETWEEN_NUM2)
     i = 2
