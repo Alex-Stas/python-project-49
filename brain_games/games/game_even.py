@@ -5,6 +5,11 @@ from brain_games.const import EVEN_GAME_MESSAGE, \
 
 
 def is_even_return_correct_answer():
+    '''
+    Function generate random number (the range stored in const.py file);
+    Check if the number is even and return tuple with
+    the number and str 'yes' or 'no' depending on result of evaluation.
+    '''
     number = random.randint(RND_BETWEEN_NUM1, RND_BETWEEN_NUM2)
     if number % 2 == 0:
         return number, 'yes'

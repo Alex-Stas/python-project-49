@@ -5,6 +5,11 @@ from brain_games.const import PRIME_GAME_MESSAGE, \
 
 
 def is_prime_return_correct_answer():
+    '''
+    Function generate random number (the range stored in const.py file);
+    Check if the number is prime and return tuple with
+    the number and str 'yes' or 'no' depending on result of evaluation.
+    '''
     number = random.randint(RND_BETWEEN_NUM1, RND_BETWEEN_NUM2)
     i = 2
     while i <= pow(number, 0.5):
