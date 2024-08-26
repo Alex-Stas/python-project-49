@@ -14,12 +14,13 @@ Setup with makefile, actual commands are below:
 - **package-install***\
         - python3 -m pip install --user dist/*.whl\
 *command **package-install-v** shown is video is for testing within virtual enviroment with the same function.  
-Each game runs with itsown command in command line:\
-1. **brain-calc** - Calculate right.\
-2. **brain-even** - Check if the number is even or not.\
-3. **brain-gcd** - Find the **G**reatest **C**ommon **D**evisior for two numbers.\
-4. **brain-prime** - Check if the number is prime.\
-5. **brain-progression** - Find missed member of the progression.\ 
+
+Each game runs with itsown command in command line:
+1. **brain-calc** - Calculate right.
+2. **brain-even** - Check if the number is even or not.
+3. **brain-gcd** - Find the **G**reatest **C**ommon **D**evisior for two numbers.
+4. **brain-prime** - Check if the number is prime.
+5. **brain-progression** - Find missed member of the progression. 
 
 Video of setup the package:
 
